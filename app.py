@@ -1,10 +1,11 @@
-from os.path import exists
-from dash import Dash, html, dcc, callback, Output, Input
+import os
 import yaml
+
+from dash import Dash, html
 
 config = None
 
-if exists("./config.yml"):
+if os.path.exists("./config.yml"):
     with open("config.yml", 'r') as file:
         try:
             config = yaml.safe_load(file)
