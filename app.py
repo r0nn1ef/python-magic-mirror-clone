@@ -20,7 +20,6 @@ if config is not None:
 
     app = Dash(__name__)
 
-
     app.layout = html.Div(id="main-wrapper", children=[
         html.Div(id="region-fullscreen-below", className="region fullscreen below", children=[html.Div(id="region-full-screen-below-container", className="container", children=[])]),
         html.Div(id="region-top-bar", className="region top bar", children=[
