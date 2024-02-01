@@ -1,6 +1,6 @@
 app:
   address: '127.0.0.1'
-  port: '8080'
+  port: 8080
   units: "imperial"
   time_format: 12
   debug: false
@@ -8,3 +8,4 @@ app:
     weather:
       api_key: ''
       provider: ''
+      config: {}

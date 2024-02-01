@@ -8,13 +8,13 @@
  */
 
 /* Uncomment and adjust accordingly if you want to import another font from the google-fonts-api: */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap'); */
 
 :root {
   --color-text: #999;
   --color-text-dimmed: #666;
   --color-text-bright: #fff;
-  --color-background: transparent;
+  --color-background: black;
 
   --font-primary: "Roboto Condensed";
   --font-secondary: "Roboto";
@@ -28,20 +28,4 @@
   --gap-body-left: 60px;
   
   --gap-modules: 30px;
-}
-
-html {
-  background-color: #000;
-}
-
-html:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.1;
-  background-image: url("https://i0.wp.com/www.diynoodleboard.com/wp-content/uploads/2023/09/Best-Woodworking-Workbench.png?fit=1280%2C800&ssl=1");
-  background-size: cover;
 }

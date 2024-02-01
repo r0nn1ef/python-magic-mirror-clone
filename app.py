@@ -1,5 +1,8 @@
 from dash import Dash, html, dcc, callback, Output, Input
 
+host_name = '127.0.0.1'
+host_port = 8080
+debug_mode = True
 
 app = Dash(__name__)
 
@@ -25,4 +28,4 @@ app.layout = html.Div(id="main-wrapper", children=[
 ])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(address=host_name, port=host_port, debug=debug_mode)
