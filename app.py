@@ -13,7 +13,7 @@ if exists("./config.yml"):
 
 if config is not None:
     PORT = int(config["app"]["port"])
-    DEBUG = (config["app"]["debug"])
+    DEBUG = config["app"]["debug"]
     TIME_FORMAT = config["app"]["time_format"]
     UNITS = config["app"]["units"]
 
