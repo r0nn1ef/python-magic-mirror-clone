@@ -1,0 +1,10 @@
+app:
+  address: '127.0.0.1'
+  port: '8080'
+  units: "imperial"
+  time_format: 12
+  debug: false
+  modules:
+    weather:
+      api_key: ''
+      provider: ''
