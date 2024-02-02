@@ -6,6 +6,10 @@ app:
   debug: false
   modules:
     weather:
-      api_key: ''
-      provider: ''
-      config: {}
+      position: "top_right"
+      config:
+        api_key: ""
+        type: "current"
+        provider: "openweathermap"
+        location: ""
+        location_id: ""
