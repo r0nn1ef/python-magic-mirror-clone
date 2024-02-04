@@ -13,3 +13,15 @@ app:
         provider: "openweathermap"
         location: ""
         location_id: ""
+    clock:
+      position: "top_left"
+      config:
+        type: "digital"
+        id: "clock-widget-central"
+        timezone: "America/Chicago"
+        color: "#999"
+        background: "transparent"
+        time_format: "%I:%M:%S %p"
+        date_format: "%a, %b %d, %Y"
+        size: 32
+        show_border: false
