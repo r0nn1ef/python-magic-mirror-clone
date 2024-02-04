@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?M+PLUS+Code+Latin&display=swap');
+
+.clock-widget {
+  font-family: 'M PLUS Code Latin', monospace;
+  width: 275px;
+}
+
+div.date-header {
+  text-align: center;
+  font-size: 16px
+}
+
+div.date-time {
+  text-align: center;
+  font-size: 32px;
+}
