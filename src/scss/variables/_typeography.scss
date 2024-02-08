@@ -1,0 +1,71 @@
+
+.dimmed {
+  color: var(--color-text-dimmed);
+}
+
+.normal {
+  color: var(--color-text);
+}
+
+.bright {
+  color: var(--color-text-bright);
+}
+
+.xsmall {
+  font-size: var(--font-size-xsmall);
+  line-height: 1.275;
+}
+
+.small {
+  font-size: var(--font-size-small);
+  line-height: 1.25;
+}
+
+.medium {
+  font-size: var(--font-size-medium);
+  line-height: 1.225;
+}
+
+.large {
+  font-size: var(--font-size-large);
+  line-height: 1;
+}
+
+.xlarge {
+  font-size: var(--font-size-xlarge);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.thin {
+  font-family: var(--font-secondary), sans-serif;
+  font-weight: 100;
+}
+
+.light {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 300;
+}
+
+.regular {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+}
+
+.bold {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 700;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+sup {
+  font-size: 50%;
+  line-height: 50%;
+}

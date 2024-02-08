@@ -142,7 +142,7 @@ gulp.task('watch', function(){
 
   gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
   gulp.watch('./src/js/**/*.js', gulp.series('eslint'));
-  gulp.watch(['./assets/style.css', './assets/*.js'], function (files){
+  gulp.watch(['./assets/*.css', './assets/*.js'], function (files){
     livereload.changed(files)
   });
 });
