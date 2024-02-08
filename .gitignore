@@ -2,3 +2,4 @@
 .venv
 config.yml
 assets/*custom.css
+node_modules

@@ -1,10 +1,10 @@
 import os
-import re
 import yaml
 from dash import Dash, html
-from newsfeed import NewsFeed
-from weather import Weather
-from clock import Clock
+
+from default.clock.clock import Clock
+# import default.newsfeed as newsfeed
+# import default.weather as weather
 
 
 class Mirror:
@@ -12,6 +12,7 @@ class Mirror:
         self._stylesheets = []
         self._scripts = []
         self._app = Dash(__name__)
+        self._app.scripts.config.serve_locally = False
         if os.path.exists(config_path):
             with open(config_path, 'r') as file:
                 try:
@@ -40,12 +41,18 @@ class Mirror:
         bottom_right_content = html.Div(children=[], className="container", id="region-bottom-right-container")
         fullscreen_above_content = html.Div(children=[], className="container", id="region-fullscreen-above-container")
 
+        self._app.css.append_css({
+            "external_url":"http://127.0.0.1:8080/default/clock/assets/clock.css"
+        })
+        #self._app.config.external_stylesheets.append("http://127.0.0.1:8080/default/clock/assets/clock.css")
+
         if hasattr(self, "config"):
             for key, value in self.modules.items():
                 position = value["position"] + "_content"
                 k = self.get_class(key)
                 constructor = globals()[k]
                 instance = constructor(value["config"])
+
                 locals()[position].children.append(instance.content())
         else:
             # If no config is found, show an error message when the dashboard is run.

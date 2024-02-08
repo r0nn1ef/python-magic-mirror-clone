@@ -3,6 +3,7 @@
 .clock-widget {
   font-family: 'M PLUS Code Latin', monospace;
   width: 275px;
+  color: #999;
 }
 
 div.date-header {

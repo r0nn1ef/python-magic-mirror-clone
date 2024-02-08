@@ -1,0 +1,27 @@
+{
+  "name": "python_smart_mirror",
+  "version": "1.0.0",
+  "description": "This is a Python clone of the MagicMirror2 smart mirror platform Raspberry Pi",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ron Ferguson",
+  "license": "ISC",
+  "devDependencies": {
+    "freelancer": "^0.1.7"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "sass": "^1.54.0"
+  },
+  "type": "module"
+}

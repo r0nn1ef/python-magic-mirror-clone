@@ -1,4 +1,4 @@
-from pod import PodInterface
+from default.pod import PodInterface
 from dash import html
 
 import feedparser
